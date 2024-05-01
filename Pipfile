@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+python-ulid = "*"
+UnleashClient = "*"
+fastapi = {extras = ["all"], version = "*"}
+redis = {extras = ["hiredis"], version = "*"}
+
+[dev-packages]
+pytest = "*"
+httpx = "*"
+pytest-asyncio = "*"
+asgi-lifespan = "*"
+
+[requires]
+python_version = "3.8"

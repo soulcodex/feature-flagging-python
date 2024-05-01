@@ -1,0 +1,9 @@
+services:
+  redis:
+    image: redis:latest
+    container_name: 'feature-flag-redis'
+    ports:
+      - "6379:6379"
+    tmpfs:
+      - /data
+    command: redis-server --appendonly yes
